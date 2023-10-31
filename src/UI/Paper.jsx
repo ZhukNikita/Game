@@ -1,8 +1,9 @@
 import paperImg from "../images/paper-emoji.png";
+import pickComputerMove from "../modules/computerPick.module";
 
-const Paper = ({ getResult }) => {
+const Paper = ({ setPlayerMove , setComputerMove }) => {
     return (
-        <button className="move-button" onClick={() => getResult("paper")}>
+        <button className="move-button" onClick={() => {setPlayerMove("paper"); setComputerMove(pickComputerMove())}}>
             <img src={paperImg} className="move-icon" />
         </button>
     );

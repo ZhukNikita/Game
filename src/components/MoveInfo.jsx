@@ -1,9 +1,14 @@
-const MoveInfo = ({ result, computerMove }) => {
+const MoveInfo = ({ result, computerMove , playerMove}) => {
     return (
         <div>
-            <h3>{`${result}
-            You:  ${computerMove} Computer
-            `}</h3>
+            {
+                result !== ''? <div>
+            <h3>{result}</h3>
+            <p>You :{playerMove}</p>
+            <p>Computer :{computerMove}</p>
+                </div> : ''
+            }
+
         </div>
     );
 };

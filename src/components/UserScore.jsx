@@ -1,7 +1,7 @@
-const UserScore = ({ score }) => {
+const UserScore = ({wins ,losses ,ties}) => {
     return (
         <div>
-            Wins: {score.wins}, Losses: {score.losses}, Ties: {score.ties}
+            Wins: {wins}, Losses: {losses}, Ties: {ties}
         </div>
     );
 };
